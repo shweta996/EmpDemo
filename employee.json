@@ -1,0 +1,58 @@
+{
+  "employees": [
+    {
+      "id": 1,
+      "name": "shweta",
+      "city": "Mumbai",
+      "gender": "female",
+      "dob": "1992-5-9",
+      "department": "Web",
+      "email": "shk12345@gmail.com"
+    },
+    {
+      "id": 2,
+      "name": "Joy",
+      "city": "Delhi",
+      "gender": "Male",
+      "dob": "1990-7-14",
+      "department": "DB",
+      "email": "Joy456@gmail.com"
+    },
+    {
+      "id": 3,
+      "name": "Jack",
+      "city": "Kolkata",
+      "gender": "Male",
+      "dob": "1989-5-6",
+      "department": "Web",
+      "email": "jack789@gmail.com"
+    },
+    {
+      "id": 4,
+      "name": "Janhvi",
+      "city": "pune",
+      "gender": "female",
+      "dob": "1997-9-15",
+      "department": "admin",
+      "email": "Jng16@gmail.com"
+    },
+    {
+      "id": 5,
+      "name": "spruha",
+      "city": "Noida",
+      "gender": "female",
+      "dob": "1994-8-2",
+      "department": "testing",
+      "email": "Spruha123@gmail.com"
+    },
+    {
+      "name": "Shweta Kale",
+      "city": "Pune",
+      "gender": "female",
+      "dob": "1996-4-1",
+      "department": "web",
+      "email": "Kaleshwetaanil@gmail.com",
+      "id": 6
+    }
+  ]
+}

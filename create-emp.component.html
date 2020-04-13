@@ -1,0 +1,86 @@
+<div class="jumbotron">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <h5>Create Employee</h5>
+        <form [formGroup]="createForm" (ngSubmit)="onSubmit()">
+
+
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" formControlName="name" class="form-control" placeholder="Please Enter Valid Name"
+              [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+            <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
+              <div *ngIf="f.name.errors.required">Name is required</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>City</label>
+            <input type="text" formControlName="city" class="form-control" placeholder="Please Enter city"
+              [ngClass]="{ 'is-invalid': submitted && f.name.errors }" />
+            <div *ngIf="submitted && f.city.errors" class="invalid-feedback">
+              <div *ngIf="f.city.errors.required">Name of city is required</div>
+            </div>
+          </div>
+
+
+
+
+          <div class="form-group">
+            <label for="gender">Gender</label>
+            <select class="form-control" formControlName="gender"
+              [ngClass]="{ 'is-invalid': submitted && f.gender.errors }">
+              <option value="select">Please Select Gender</option>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+            </select>
+            <div *ngIf="submitted && f.gender.errors" class="invalid-feedback">
+              <div *ngIf="f.gender.errors.required">Please select gender</div>
+            </div>
+
+          </div>
+
+          <div class="form-group">
+            <label for="dob">Date of Birth</label>
+            <div class="input-group date" id="datetimepicker1">
+              <input type="text" class="form-control" placeholder="mm/dd/yyy" bsDatepicker formControlName="dob" />
+             
+            </div>
+          </div>
+
+          
+
+          <div class="form-group">
+            <label>Department </label>
+            <input type="text" formControlName="department" class="form-control" placeholder="Please Enter Department"
+              [ngClass]="{ 'is-invalid': submitted && f.department.errors }" />
+            <div *ngIf="submitted && f.department.errors" class="invalid-feedback">
+              <div *ngIf="f.department.errors.required">Department is required</div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="text" formControlName="email" class="form-control" placeholder="Please Enter an Email"
+              [ngClass]="{ 'is-invalid': submitted && f.email.errors }" />
+            <div *ngIf="submitted && f.email.errors" class="invalid-feedback">
+              <div *ngIf="f.email.errors.required">Email is required</div>
+            </div>
+          </div>
+
+          <!-- <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Remember me
+          </label>
+        </div> -->
+          <div class="form-group">
+            <button class="btn btn-primary savebtn" [disabled]="createForm.invalid"> Save</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

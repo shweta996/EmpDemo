@@ -1,0 +1,78 @@
+<div class="jumbotron">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 offset-md-3">
+                <h5>Edit Employee</h5>
+                <form [formGroup]="editForm" (ngSubmit)="onUpdate()">
+
+
+
+                    <div class="form-group">
+
+                        <label for="fullName">Name</label>
+                        <input id="name" type="text" class="form-control" formControlName="name" required>
+
+                    </div>
+
+
+
+                    <div class="form-group">
+
+                        <label for="city">City</label>
+                        <input id="city" type="text" class="form-control" formControlName="city" required>
+
+                    </div>
+
+                    <!-- <div class="form-group">
+                        <label for="gender">Gender</label>
+                        <select class="form-control" formControlName="gender">
+                          <option value="select">Please Select Gender</option>
+                          <option value="female">Female</option>
+                          <option value="male">Male</option>
+                        </select>
+                    </div> -->
+
+
+                    <div class="form-group">
+
+                        <label for="gender">Gender</label>
+                        <input id="gender" type="text" class="form-control" formControlName="gender" required>
+
+                    </div>
+
+                    <div class="form-group">
+                        <label for="dob">Date of Birth</label>
+                        <div class="input-group date" id="datetimepicker1">
+                          <input type="text" class="form-control"  bsDatepicker formControlName="dob" />
+                        </div>
+                      </div>
+
+
+                    <div class="form-group">
+
+                        <label for="department">Department</label>
+                        <input id="department" type="text" class="form-control" formControlName="department" required>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">Email</label>
+                        <input id="email" type="text" class="form-control" formControlName="email" required>
+
+                    </div>
+
+                    <div class="panel-footer">
+                        <button class="btn btn-primary savebtn" type="submit">Update</button>
+                    </div>
+
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+</div>
